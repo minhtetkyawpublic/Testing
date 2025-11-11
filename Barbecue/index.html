@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrillMaster BBQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>🔥 GrillMaster BBQ</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Our BBQ Specialties</h2>
+            <div class="menu-grid" id="menu-grid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Order</h2>
+            <div id="cart-items">
+                <!-- Cart items will be populated by JavaScript -->
+                <p id="empty-cart-message">Your cart is empty. Add some delicious BBQ items!</p>
+            </div>
+            <div class="cart-total" id="cart-total">Total: $0.00</div>
+            <div class="cart-actions">
+                <button class="btn btn-secondary" id="save-voucher">Save as Image</button>
+            </div>
+        </section>
+
+        <!-- Hidden voucher for image capture -->
+        <div class="voucher" id="voucher">
+            <div class="voucher-header">
+                <h2>🔥 GrillMaster BBQ</h2>
+                <p>Order Voucher</p>
+                <p class="order-date" id="order-date"></p>
+            </div>
+            <div id="voucher-items">
+                <!-- Voucher items will be populated by JavaScript -->
+            </div>
+            <div class="voucher-total">
+                <span>Total:</span>
+                <span id="voucher-total">$0.00</span>
+            </div>
+            <div class="voucher-footer">
+                <p>Thank you for your order!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 GrillMaster BBQ. All rights reserved.</p>
+    </footer>
+
+    <!-- Include html2canvas library for image capture -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
